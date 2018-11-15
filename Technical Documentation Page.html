@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<style>
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+#navbar{
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0,22,22,0.4)
+}
+header {
+  color: black;
+  font-size: 30px;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+#main-doc header{
+  text-align: left;
+  margin: 0px;
+}
+#navbar ul{
+  height: 88%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#navbar li{
+  color: #4d4e53;
+  border: 1px solid;
+  border-bottom-width: 0px;
+  padding: 8px;
+  padding-left: 45px;
+  list-style: none;
+  position: relative;
+  left: -50px;
+  width: 100%;
+}
+#navbar a {
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+section article{
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+section li {
+  margin: 15px 0px 0px 20px;
+}
+code{
+  display: block;
+  text-align: left;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding; 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+@media only screen and (max-wdith: 815px){
+  /*For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+  #main-doc section {
+    padding-top: 240px;
+  }
+}
+@@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
+</style>
+
+
+
+
+<nav id="navbar">
+  <header>
+    HTML & CSS
+  </header>
+  <ul>
+    <a class="nav-link" href="#Introduction" rel="internal"><li>Introduction</li></a>
+    <a class="nav-link" href="#What_you_should_already_know" rel="internal"><li>What you should already know</li></a>
+    <a class="nav-link" href="#HTML" rel="internal"><li>HTML</li></a>
+    <a class="nav-link" href="#CSS" rel="internal"><li>CSS</li></a>
+    <a class="nav-link" href="#Hello_World" rel="internal"><li>Hello World</li></a>
+  </ul>
+</nav>
+
+<main id="main-doc">
+
+<section class="main-section" id="Introduction">
+  <header>Introduction</header>
+  <article>
+    <p> This site is to help you understand, learn, and create websites using HTML and CSS. These two languages are simple and straightforward and great for beginners wanting to learn how to code.Ask anyone where to begin and they'll likely tell you to start here. You aren't creating the next AI model or even the next social media company. However, you are learning how to create code, input it, and edit it to your liking. It's a rinse and repeat process that continues whether you're using HTML or Python. </p>
+    <p> HTML and CSS, although not technicaly a programming language, still helps beginners to understand the basics of code. What else can HTML and CSS teach you? Well everyone uses a website. Learning these two things will be able to give you a working knowledge of every website on the internt, how it's created, and how it works. After mastering HTML and CSS, the next step would be to learn Javascript! But before all of that, it's important to understand how HTML and CSS work and why they work that way. This page is no way trying to get you to learn everything but just a simple beginning for these languages. This page seeks to give you a better understanding of: </p>
+    <li>Website Creation</li>
+    <li>Website Design</li>
+  </article>
+</section>
+
+
+<section class="main-section"id="What_you_should_already_know">
+  <header>What you should already know</header>
+  <article>
+    <p> This page requires that you know nothing about coding, programming, or any other technical skillset. HTML and CSS are not very intense as far as learning and the knowledge needed.</p>
+    <p> However, a knowledge of the internet, typing skills, a creative mind, a patient mind, and a eagerness for learning will all be very helpful in the next few sections. In fact even those who work in this industry don't know everything and continue to have to be patient and look and ask others for help.To refresh all you need for this page is: </p>
+    <li>Patience</li>
+    <li>Creativity</li>
+    <li>Eagerness to learn</li>
+  </article>
+</section>
+
+<section class="main-section" id="HTML">
+  <header>HTML</header>
+  <article>
+    <p> What is HTML? According to the dictionary HTML is "Hypertext Markup Language, a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages." It's not really a lot of information for the defintion, but we can learn that it does stuff for the world wide web. Essentially, HTML is a system that describes a structure and elements within a web page using markup. Using what are called tags you would establish an element and the information or text that goes into that element. For example common tags are "heading", "paragraph", "table", etc.These tags are used to structure your webpage and define elements within the page to organize everything.  If you're itching to see some actual HTML here's an example of HTML using the header tag. Open up your notepad and start with this. Open and close the first tag with the less then and greater than sign then type in the word header in between the two signs. Now type in hello world. Next type in an another greater than and lesser than sign. Now add a forward slash and header inside of those signs. Your code should look like this now: <code> <header>Hello World</header></code>
+</p>
+    <p> Congratulations! You've created your first line of code! You're an expert now. You've created a header for a webpage. Now what? Well now you can add sections, you can add paragraphs, you can add just about anything you can think of. Why not try and add a paragraph element to the text? Underneath the header line, using the same signs create a paragraph element by placing a p in between the two sets of greater than and lesser than signs In between the two sets type in any paragraph that you want. Write about yourself. Write about your goals. Or write gibberish.For example our code looks like this now:
+    <code><header>
+      Hello World
+    </header><p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p></code>
+  <code><header>
+    Hello World
+  </header><p>My name is Bob. I love computers and the internet! </p></code> </p>
+  </article>
+</section>
+
+<section class="main-section" id="CSS">
+  <header>CSS</header>
+  <article>
+    <p> Ok great! You've got the simple basics for HTML. You know that it's used for structuring a webpage and elements within it. Great. So how do you style it and make everything pretty and professional? Well that is where CSS comes in. CSS, or cascadding style sheets, is a language that describes the style of an HTML document. CSS tells us how the webpage will look. So think of HTML as the home builder. Think of CSS as the designer. You create the CSS in a style section. The style section is defined by the tags of style. In between the two tags you'd have a number of elements that you're seeking to design and make pretty. Now lets get to the coding! How would you go about doing this? Well you do this by creating a style section for your coding. It also depends on how you broke up your HTML. You design and use CSS based off the strucutre you've created. So for example if you created a paragraph and wanted to style it in a verdana font at 12 font size. Well then you would put in your style section of you coding:  <code> p {
+      font-family: verdana;
+      font-size: 20px;
+    }</code> </p>
+    <p>Great! Now you've styled your paragraphs in that font-size and font-family. What else can you do? Well one other aspect of CSS is you can give color to the page. Black and white is great but let's add a background to our imaginary page. We do this by styling the body element of the webpage so for example it would look like this in our style section: <code> body {
+      background-color: green; }</code></p>
+  </article>
+</section>
+
+<section class="main-section" id="Hello_World">
+  <header>Hello World</header>
+  <article>
+    <p> We've briefly outline what HTML and CSS are. We understand that our webpages are created in structure using HTML. We create titles, headers, sections, paragraphs, and etc. using HTML and the many tags that allow a developer to create. HTML is the backbone of the entire internet. CSS we learned is the styling language. We can take all the elements that were created by HTML and give them some styling. We can give a background color, font-size, font-type, and etc. If HTML is the backbone of the internet then CSS is the skin that makes us who we are. </p>
+    <p> For a parting challenge, I want you the reader to attempt to create a webpage that has a title, two sections and a paragraph in each section so that you can practice. I want you to style this using any way that you like! Afterwards you'll have a better appreciation of the internet and you can say "Hello World!"</p>
+  </article>
+</section>
+
+</main>
